@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(14, 133, 127);
+    color: azure;
+}
+.imgheader{
+    display:flex;
+    justify-content: center;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+.aprende{
+    display:flex;
+    justify-content: center;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+.gitfacil{
+    display:flex;
+    justify-content: center;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+.comgit{
+    display:flex;
+    justify-content: center;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+.comgit1{
+    display:flex;
+    justify-content: center;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+.titulo{
+    display:flex;
+    justify-content: center;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
