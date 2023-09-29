@@ -27,4 +27,23 @@ footer {
     text-align: center;
     padding: 10px 0;
     margin-top: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-column{
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+/* Cambio de color al pasar el ratón por encima de los enlaces */
+footer a:hover {
+    text-decoration: underline;
 }
