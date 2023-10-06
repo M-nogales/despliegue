@@ -1,0 +1,100 @@
+
+
+# Crear una nueva rama y cambiar a ella
+git checkout -b mi-rama
+
+# Hacer cambios en tu código y confirmarlos en la nueva rama
+git add .
+git commit -m "Agregando cambios en mi rama"
+
+# Cambiar de nuevo a la rama principal (por ejemplo, "main" o "master")
+git checkout main
+
+# Fusionar la rama creada en la rama principal
+git merge mi-rama
+
+# Eliminar la rama que ya ha sido fusionada
+git branch -d mi-rama
+
+# Listar todas las ramas, incluyendo las remotas
+git branch -a
+
+# Eliminar una rama remota (ten en cuenta que esto solo afecta a tu copia local)
+git branch -dr origin/mi-rama-remota
+
+# Cambiar de rama remota a una rama local (esto crea una copia local de la rama remota)
+git checkout -b mi-rama-local origin/mi-rama-remota
+
+# Cambiar de rama local a una rama remota (esto envía tus cambios a la rama remota)
+git push origin mi-rama-local:mi-rama-remota
+
+# Ver un historial gráfico de las ramas
+git log --graph --oneline --all --decorate
+
+-------------------------------------------------
+
+Git es principalmente un sistema de control de versiones diseñado para trabajar con repositorios,
+ por lo que la mayoría de los comandos de Git están relacionados con la gestión de repositorios.
+
+Clonar un repositorio remoto:
+
+Para clonar un repositorio remoto en tu máquina local, puedes usar el siguiente comando:
+
+git clone <URL_del_repositorio>
+Inicializar un nuevo repositorio:
+
+Para crear un nuevo repositorio Git en un directorio existente, puedes usar el siguiente comando:
+
+git init
+Añadir un repositorio remoto:
+
+Para agregar un repositorio remoto a tu repositorio local, puedes usar el siguiente comando:
+
+git remote add <nombre_del_remoto> <URL_del_remoto>
+Eliminar un repositorio remoto:
+
+Si necesitas eliminar un repositorio remoto de tu configuración, puedes usar:
+
+git remote remove <nombre_del_remoto>
+Cambiar la URL de un repositorio remoto:
+
+Si necesitas cambiar la URL de un repositorio remoto existente, puedes hacerlo con este comando:
+
+git remote set-url <nombre_del_remoto> <nueva_URL>
+Ver información detallada sobre remotos:
+
+Puedes ver información detallada sobre tus repositorios remotos con el siguiente comando:
+
+git remote -v
+Renombrar un repositorio remoto:
+
+Puedes renombrar un repositorio remoto con el siguiente conjunto de comandos:
+
+git remote rename <nombre_viejo> <nombre_nuevo>
+Eliminar un repositorio local:
+
+Si deseas eliminar un repositorio local de tu sistema de archivos, simplemente elimina el directorio del repositorio o utiliza un comando como:
+
+rm -rf <nombre_del_directorio>
+Ver información sobre el repositorio local:
+
+Para ver información sobre el estado y la configuración de tu repositorio local, puedes usar:
+
+git config --list
+git status
+Crear y aplicar un parche (patch):
+
+Puedes crear un parche para tus cambios locales y luego aplicarlo en otro repositorio con los siguientes comandos:
+
+git diff > mis-cambios.patch
+# Luego, en otro repositorio
+git apply < mis-cambios.patch
+
+Estos son algunos comandos avanzados relacionados con la gestión de repositorios en Git.
+ La gestión de repositorios es una parte fundamental de trabajar con Git, y estos comandos pueden ser útiles en diversas situaciones.
+  Ten en cuenta que es importante comprender bien el impacto de estos comandos antes de utilizarlos, especialmente en entornos colaborativos.
+
+
+
+
+--------------------------------------------------------------------------------
