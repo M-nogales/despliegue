@@ -17,7 +17,7 @@
         <div class="ag-format-container">
             <div class="ag-courses_box">
                 <div class="ag-courses_item">
-                    <a href="#" class="ag-courses-item_link">
+                    <button class="ag-courses-item_link" data-bs-toggle="modal" data-bs-target="#cursoGitModal">
                         <div class="ag-courses-item_bg"></div>
                         <div class="ag-courses-item_title">
                             Curso de Git para principiantes
@@ -27,11 +27,11 @@
                                 Inicio: 15.10.2023
                             </span>
                         </div>
-                    </a>
+                    </button>
                 </div>
 
                 <div class="ag-courses_item">
-                    <a href="#" class="ag-courses-item_link">
+                    <button class="ag-courses-item_link" data-bs-toggle="modal" data-bs-target="#gitAvanzadoModal">
                         <div class="ag-courses-item_bg"></div>
                         <div class="ag-courses-item_title">
                             Git Avanzado: Gestión de ramas
@@ -41,12 +41,12 @@
                                 Inicio: 22.10.2023
                             </span>
                         </div>
-                    </a>
+                    </button>
                 </div>
                 
                
                 <div class="ag-courses_item">
-                    <a href="#" class="ag-courses-item_link">
+                    <button class="ag-courses-item_link" data-bs-toggle="modal" data-bs-target="#githubModal">
                         <div class="ag-courses-item_bg"></div>
                         <div class="ag-courses-item_title">
                             GitHub: Gestión de Repositorios
@@ -56,12 +56,73 @@
                                 Inicio: 12.11.2023
                             </span>
                         </div>
-                    </a>
+                    </button>
                 </div>
                 
             </div>
         </div>
     </div>
+
+    <!-- Modales -->
+
+    <!-- Modal para "Curso de Git para principiantes" -->
+    <div class="modal fade" id="cursoGitModal" tabindex="-1" aria-labelledby="cursoGitModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cursoGitModalLabel">Curso de Git para principiantes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Descripción del curso de Git para principiantes...</p>
+                    <!-- Agrega más información sobre el curso aquí -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para "Git Avanzado: Gestión de ramas" -->
+    <div class="modal fade" id="gitAvanzadoModal" tabindex="-1" aria-labelledby="gitAvanzadoModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="gitAvanzadoModalLabel">Git Avanzado: Gestión de ramas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Descripción del curso de Git Avanzado: Gestión de ramas...</p>
+                    <!-- Agrega más información sobre el curso aquí -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal para "GitHub: Gestión de Repositorios" -->
+    <div class="modal fade" id="githubModal" tabindex="-1" aria-labelledby="githubModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="githubModalLabel">GitHub: Gestión de Repositorios</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Descripción del curso de GitHub: Gestión de Repositorios...</p>
+                    <!-- Agrega más información sobre el curso aquí -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fin de modales -->
 
     <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2023 Guía Completa de Git. Todos los derechos reservados.</p>
