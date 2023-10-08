@@ -4,11 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GIT GUIDE</title>
+    <title>Guía Completa de Git</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="icon" href="img/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 
 <body>
+    <header class="bg-dark text-white text-center py-3">
+        <h1>Guía Completa de Git</h1>
+        <img src="img/icono.png">
 
     <header>
         <h1>Easy Git Guide</h1>
@@ -16,69 +21,184 @@
             <img src="/img/icono.png" alt="git_logo_img">
         </div>
     </header>
-    <div class="container">
-        <h2>Introducción a Git</h2>
-        <p>Git es un sistema de control de versiones distribuido que te permite llevar un registro de los cambios en tu
-            código.</p>
+    <div class="container mt-4">
+        <div class="ag-format-container">
+            <div class="ag-courses_box">
+                <div class="ag-courses_item">
+                    <button class="ag-courses-item_link" data-bs-toggle="modal" data-bs-target="#cursoGitModal">
+                        <div class="ag-courses-item_bg"></div>
+                        <div class="ag-courses-item_title">
+                            Curso de Git para principiantes
+                        </div>
+                        <div class="ag-courses-item_date-box">
+                            <span class="ag-courses-item_date">
+                                Inicio: 01.10.2023
+                            </span>
+                        </div>
+                    </button>
+                </div>
 
-        <h2>Instalación de Git</h2>
-        <p>Aquí te explicamos cómo instalar Git en diferentes sistemas operativos.</p>
-
-        <h2>Comandos Básicos de Git</h2>
-        <div class="parrafo">
-            <p>
-                $git init: Inicializa un nuevo repositorio Git en el directorio actual.<br>
-
-                $git clone <URL>: Clona un repositorio Git existente desde una URL a tu máquina local.<br>
-
-                    $git add <archivo>: Agrega cambios en un archivo al área de preparación (staging). Puedes usar git
-                        add . para agregar todos los archivos modificados.<br>
-
-                        $git commit -m "Mensaje": Crea un nuevo commit con los cambios en el área de preparación y un
-                        mensaje descriptivo.<br>
-
-                        $git status: Muestra el estado actual del repositorio, incluyendo archivos modificados,
-                        agregados o sin seguimiento.<br>
-
-                        $git log: Muestra un registro de los commits en el repositorio.<br>
-
-                        $git pull: Descarga los cambios más recientes desde el repositorio remoto a tu rama local.<br>
-
-                        $git push: Sube los commits locales al repositorio remoto.<br>
-
-                        $git branch: Muestra una lista de ramas locales y resalta la rama actual.<br>
-
-                        $git checkout <nombre_rama>: Cambia a una rama específica.<br>
-
-                            $git merge <nombre_rama>: Fusiona una rama con la rama actual.<br>
-
-                                $git remote -v: Muestra la lista de repositorios remotos configurados.<br>
-
-                                $git fetch: Descarga los cambios desde el repositorio remoto sin fusionarlos.<br>
-
-                                $git diff: Muestra las diferencias entre el directorio de trabajo y el área de
-                                preparación.<br>
-
-                                $git reset <archivo>: Quita un archivo del área de preparación, pero mantiene los
-                                    cambios en el directorio de trabajo.<br>
-            </p>
+                <div class="ag-courses_item">
+                    <button class="ag-courses-item_link" data-bs-toggle="modal" data-bs-target="#gitAvanzadoModal">
+                        <div class="ag-courses-item_bg"></div>
+                        <div class="ag-courses-item_title">
+                            Git Avanzado: Gestión de ramas
+                        </div>
+                        <div class="ag-courses-item_date-box">
+                            <span class="ag-courses-item_date">
+                                Inicio: 05.10.2023
+                            </span>
+                        </div>
+                    </button>
+                </div>
+                
+               
+                <div class="ag-courses_item">
+                    <button class="ag-courses-item_link" data-bs-toggle="modal" data-bs-target="#githubModal">
+                        <div class="ag-courses-item_bg"></div>
+                        <div class="ag-courses-item_title">
+                            GitHub: Gestión de Repositorios
+                        </div>
+                        <div class="ag-courses-item_date-box">
+                            <span class="ag-courses-item_date">
+                                Inicio: 08.11.2023
+                            </span>
+                        </div>
+                    </button>
+                </div>
+                
+            </div>
         </div>
+    </div>
 
-        <h2>Flujo de Trabajo con Git</h2>
-        <p>Aprende a trabajar con ramas, fusionar cambios y más.</p>
+   <!-- Modal para "Curso de Git para principiantes" -->
+<div class="modal fade" id="cursoGitModal" tabindex="-1" aria-labelledby="cursoGitModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cursoGitModalLabel">Curso de Git para principiantes</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Bienvenido al curso básico de Git. A continuación, se presentan los conceptos fundamentales:</p>
+                
+                <!-- Introducción -->
+                <h6>1. Introducción</h6>
+                <p>Git es un sistema de control de versiones distribuido que permite a los equipos de trabajo colaborar en el mismo proyecto sin conflictos.</p>
 
-        <h2>Trabajando con GitHub</h2>
-        <p>Aprende cómo utilizar GitHub para alojar tus proyectos y colaborar con otros desarrolladores.</p>
+                <!-- Instalación -->
+                <h6>2. Instalación</h6>
+                <p>Descargar Git desde la página oficial y seguir los pasos del instalador. <a href="https://git-scm.com/" target="_blank">Sitio oficial de Git</a></p>
 
-        <h2>Recursos Adicionales</h2>
-        <ul>
-            <li><a href="https://git-scm.com/doc" target="_blank">Documentación oficial de Git</a></li>
-            <li><a href="https://github.com/" target="_blank">GitHub</a></li>
-            <li><a href="https://www.atlassian.com/git/tutorials" target="_blank">Tutoriales de Atlassian</a></li>
-            <li><a href="https://learngitbranching.js.org/" target="_blank">Aprende Git Branching</a></li>
-        </ul>
+                <!-- Comandos básicos -->
+                <h6>3. Comandos básicos</h6>
+                <ul>
+                    <li><code>git init</code> - Inicializa un nuevo repositorio Git.</li>
+                    <li><code>git add .</code> - Agrega todos los cambios al área de preparación.</li>
+                    <li><code>git commit -m "mensaje"</code> - Guarda los cambios con un mensaje descriptivo.</li>
+                    <li><code>git status</code> - Muestra el estado actual del repositorio.</li>
+                </ul>
+
+                <!-- Trabajando con remotos -->
+                <h6>4. Trabajando con repositorios remotos</h6>
+                <ul>
+                    <li><code>git remote add origin [url]</code> - Conecta tu repositorio local con un repositorio remoto.</li>
+                    <li><code>git push -u origin master</code> - Sube tus cambios al repositorio remoto.</li>
+                    <li><code>git pull</code> - Trae cambios del repositorio remoto a tu repositorio local.</li>
+                </ul>
+                
+                <!-- Consejos y mejores prácticas -->
+                <h6>5. Consejos y mejores prácticas</h6>
+                <p>Es vital hacer commits pequeños y descriptivos para que el historial del proyecto sea entendible. También es recomendable trabajar con ramas (branches) para organizar mejor las características y correcciones del proyecto.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 
+    <!-- Modal para "Git Avanzado: Gestión de ramas" -->
+    <div class="modal fade" id="gitAvanzadoModal" tabindex="-1" aria-labelledby="gitAvanzadoModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="gitAvanzadoModalLabel">Git Avanzado: Gestión de ramas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Las ramas en Git te permiten desarrollar características, arreglos y experimentos en paralelo sin afectar el flujo principal del proyecto.</p>
+                    
+                    <!-- Creando y cambiando de ramas -->
+                    <h6>1. Creación y cambio de ramas</h6>
+                    <ul>
+                        <li><code>git branch [nombre]</code> - Crea una nueva rama.</li>
+                        <li><code>git checkout [nombre]</code> - Cambia a la rama especificada.</li>
+                        <li><code>git checkout -b [nombre]</code> - Crea y cambia a la nueva rama en un solo paso.</li>
+                    </ul>
+    
+                    <!-- Fusionando ramas -->
+                    <h6>2. Fusionar ramas</h6>
+                    <ul>
+                        <li><code>git merge [nombre]</code> - Fusiona la rama especificada con la rama actual.</li>
+                    </ul>
+    
+                    <!-- Resolviendo conflictos -->
+                    <h6>3. Resolución de conflictos</h6>
+                    <p>Cuando dos ramas modifican el mismo fragmento de código y se intenta fusionar, ocurre un conflicto. Es necesario resolverlo manualmente antes de continuar.</p>
+    
+                    <!-- Ramas remotas -->
+                    <h6>4. Ramas remotas</h6>
+                    <ul>
+                        <li><code>git push origin [nombre]</code> - Sube la rama al repositorio remoto.</li>
+                        <li><code>git fetch</code> - Trae ramas remotas que no existen localmente.</li>
+                        <li><code>git pull</code> - Actualiza la rama actual con la versión del repositorio remoto.</li>
+                    </ul>
+    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal para "GitHub: Gestión de Repositorios" -->
+    <div class="modal fade" id="githubModal" tabindex="-1" aria-labelledby="githubModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="githubModalLabel">GitHub: Gestión de Repositorios</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>GitHub es una plataforma basada en la web que utiliza Git para el control de versiones. Permite la colaboración entre desarrolladores.</p>
+    
+                    <!-- Creando repositorios -->
+                    <h6>1. Creación de Repositorios</h6>
+                    <p>Desde el menú "New repository", puedes inicializar un nuevo repositorio, agregar un README, licencia y .gitignore.</p>
+    
+                    <!-- Clonando repositorios -->
+                    <h6>2. Clonar Repositorios</h6>
+                    <ul>
+                        <li><code>git clone [URL del repositorio]</code> - Clona el repositorio en tu máquina local.</li>
+                    </ul>
+    
+                    <!-- Issues y Pull Requests -->
+                    <h6>3. Issues y Pull Requests</h6>
+                    <p>Los "Issues" permiten llevar un seguimiento de tareas, mejoras y bugs en tu proyecto. Los "Pull Requests" son propuestas de cambios que otros desarrolladores sugieren al proyecto original.</p>
+    
+                    <!-- GitHub Actions y CI/CD -->
+                    <h6>4. GitHub Actions y CI/CD</h6>
+                    <p>GitHub Actions permite automatizar flujos de trabajo. Puedes configurar acciones para pruebas automáticas, despliegues, y más.</p>
+    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
     </div>
     <section>
         <h1> Tutorial para instalar git</h1>
@@ -91,36 +211,42 @@
 
     </section>
 
-    <footer>
-        <div class="containerf">
-            <div class="footer-column">
-                <ul>
-                    <li><a href="#seccion1"> Sección 1</a></li>
-                    <li><a href="#seccion2"> Sección 2</a></li>
-                    <li><a href="#seccion3"> Sección 3</a></li>
-                </ul>
-            </div>
-
-
-            <div class="footer-column">
-                <ul>
-                    <li>Juanillo</li>
-                    <li>Matamoros</li>
-                    <li>Manuel</li>
-                </ul>
-            </div>
-
-            <div class="footer-column">
-                <ul>
-                    <li><a href="#seccion1"> exampleexample.com</a> </li>
-                    <li><a href="#seccion1"> exampleexample.com</a> </li>
-                    <li><a href="#seccion1"> exampleexample.com</a> </li>
-                </ul>
-            </div>
-        </div>
+    
         <hr>
-        <p>&copy; 2023 Guía Completa de Git. Todos los derechos reservados.</p>
+
+    <!-- Fin de modales -->
+
+    
+    <footer>
+            <div class="containerf">
+                <div class="footer-column">
+                    <ul>
+                        <li><a href="#cursoGitModal"> Sección 1</a></li>
+                        <li><a href="#seccion2"> Sección 2</a></li>
+                        <li><a href="#seccion3"> Sección 3</a></li>
+                    </ul>
+                </div>
+    
+    
+                <div class="footer-column">
+                    <ul>
+                        <li>Juanillo</li>
+                        <li>Matamoros</li>
+                        <li>Manuel</li>
+                    </ul>
+                </div>
+    
+                <div class="footer-column">
+                    <ul>
+                        <li><a href="#cursoGitModal"> exampleexample.com</a> </li>
+                        <li><a href="#seccion1"> exampleexample.com</a> </li>
+                        <li><a href="#seccion1"> exampleexample.com</a> </li>
+                    </ul>
+                </div>
+            
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
